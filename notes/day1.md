@@ -1,0 +1,1 @@
+did all the basics through js on the project website.
