@@ -162,7 +162,7 @@
 // IF Statements
 
 // let age=25;
-// let drivingLicense= false;
+// let drivingLicense= true;
 
 // if(age>16 && drivingLicense==true){
 //     console.log(`You are eligible to drive legally`);
@@ -328,10 +328,54 @@
 // extras=username.toLowerCase().slice(1);
 // console.log(`Welcome ${firstletter+extras}`);
 
+// // palindrome function
+// let isPalindrome='123abba321';
+// function Palindrome(isPalindrome){
+//     isPalindrome= String(isPalindrome);
+//     for(let i=0;i<isPalindrome.length/2;i++){
+//         if(isPalindrome[i]!==isPalindrome[isPalindrome.length-1-i]){
+//             return false;
+//         }
+//         }
+
+//   return true;
+// }
+
+// console.log(Palindrome(isPalindrome))
+
+// method chaning
+// without
+// let username= window.prompt("what is ur name bro?");
+// username=username.trim();
+// let letter =username.charAt(0);
+// letter= letter.toUpperCase();
+// let extrachars= username.slice(1);
+// extrachars=extrachars.toLowerCase();
+// username=letter+extrachars;
+// console.log(username);
+
+// with method chaining
+// let peru=window.prompt("what is ur name huh");
+// console.log(peru=peru.trim().charAt(0).toUpperCase() + peru.trim().slice(1).toLowerCase());
 
 
+// prime number check
 
-
+function isprime(num){
+    num=Number(num);
+    let count=0;
+    for(i=1;i<=num/2;i++){
+        if (num%i==0){
+            count++;
+        }
+    }    
+    if(count==1){
+        return true;
+    }
+    
+return false;
+}
+console.log(isprime(7))
 
 
 
