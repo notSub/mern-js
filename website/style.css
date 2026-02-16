@@ -1,0 +1,49 @@
+/* #countLabel{
+    font-family: 'Helvetica';
+    display: block;
+    font-size: 10em;
+    text-align: center;
+    color: blue;
+}
+
+#container{
+    text-align: center;
+   
+
+}
+
+    
+    
+
+.buttons{
+    
+    padding: 10px 20px; vertical and horizontal distance from the letters to the border
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.801);
+    background-color: rgb(233, 182, 14);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .25s;
+}
+.buttons:hover{
+    background-color: rgb(240, 80, 5);
+
+} */
+ body{
+    text-align: center;
+    font-family: verdana;
+
+ }
+ #h2{
+    color: aqua;
+    text-align: center;
+    display: block;
+    font-size: 4em;
+ }
+ #buttons{
+    background-color: blue;
+    border-radius: 5px;
+     cursor: pointer;
+     font-size: 1.5em;
+     padding: 10px 20px; 
+ }
