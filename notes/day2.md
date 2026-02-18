@@ -1,5 +1,5 @@
 // return false;
-// }
+// 
 // console.log(isprime(7))
 // let num= 63
 // let arr=[32,34,11,63,22,67,78,37];
