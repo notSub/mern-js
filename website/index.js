@@ -394,3 +394,40 @@
 
 
 // console.log(binsearch(arr,num));
+
+// const tb=document.getElementById("text");
+// const cf=document.getElementById("cf");
+// const fc=document.getElementById("fc");
+// const result=document.getElementById("result");
+// let temp;
+// const button=document.getElementById("buttons").onclick=tconversion;
+
+
+
+// function tconversion(){
+//     if(cf.checked){
+//         temp=Number(tb.value);
+//         temp=(temp*9/5)+32;
+//          result.textContent=temp.toFixed(1)+"F";
+//     }
+//     else if(fc.checked){
+//         temp=Number(tb.value);
+//         temp=(temp-32)*5/9;
+//          result.textContent=temp.toFixed(1)+"C";
+//     }
+//     else{
+//          result.textContent="please select a unit";
+    
+// }
+// }
+
+let arr = [23,76,19,24,78,23,85];
+
+let max=arr[arr.sort((a,b)=>a-b).length-1]
+// arr.push(arr.push(4));
+
+console.log(max);
+let sub=arr.sort((a,b)=>b-a);
+console.log(sub);
+
+
