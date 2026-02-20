@@ -421,13 +421,25 @@
 // }
 // }
 
-let arr = [23,76,19,24,78,23,85];
+// let arr = [23,76,19,24,78,23,85];
 
-let max=arr[arr.sort((a,b)=>a-b).length-1]
-// arr.push(arr.push(4));
+// let max=arr[arr.sort((a,b)=>a-b).length-1]
+// // arr.push(arr.push(4));
 
-console.log(max);
-let sub=arr.sort((a,b)=>b-a);
-console.log(sub);
+// console.log(max);
+// let sub=arr.sort((a,b)=>b-a);
+// console.log(sub);
+let fruits=['apple', 'mango', 'banana', 'coconut'];
+fruits.forEach(uppercase);
+fruits.forEach(display);
 
+
+function uppercase(ele,ind,arr){
+    arr[ind]=ele.toUpperCase();
+
+}
+
+function display(item,lol,happy){
+console.log(item);
+}
 
