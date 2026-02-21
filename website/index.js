@@ -429,17 +429,8 @@
 // console.log(max);
 // let sub=arr.sort((a,b)=>b-a);
 // console.log(sub);
-let fruits=['apple', 'mango', 'banana', 'coconut'];
-fruits.forEach(uppercase);
-fruits.forEach(display);
+ 
 
 
-function uppercase(ele,ind,arr){
-    arr[ind]=ele.toUpperCase();
 
-}
-
-function display(item,lol,happy){
-console.log(item);
-}
 

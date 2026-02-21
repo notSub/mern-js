@@ -33,3 +33,17 @@ allowedchars+=spchar?spchars:"";
 }
 
 console.log(randomPasswordGenerate(14,true,true,true,true));
+
+let fruits=['apple', 'mango', 'banana', 'coconut'];
+fruits.forEach(uppercase);
+fruits.forEach(display);
+
+
+function uppercase(ele,ind,arr){
+    arr[ind]=ele.toUpperCase();
+
+}
+
+function display(item,lol,happy){
+console.log(item);
+}
