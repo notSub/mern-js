@@ -429,8 +429,8 @@
 // console.log(max);
 // let sub=arr.sort((a,b)=>b-a);
 // console.log(sub);
- 
 
 
-
+const dat1= new Date();
+console.log(dat1);
 
