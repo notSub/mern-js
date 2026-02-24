@@ -39,7 +39,7 @@
 // weight=345;
 // if (students==36) {
 //     console.log(`hello dog`);
-    
+
 // }
 // else{
 //     console.log(weight);
@@ -201,25 +201,25 @@
 //     else{
 //         subresult.textContent=`You are not subscribed to the channel \`:(\``;
 //     }
-    
+
 //     if(visa.checked){
 //         result.textContent=`You are paying through VISA`;
-    
+
 //     } 
 //     else if(mastercard.checked){
 //         result.textContent=`You are paying through MasterCard`;
-        
+
 //     }
 //     else if(paypal.checked){
 //         result.textContent=`You are paying through PayPal`;
-        
+
 //     }
 //     else{
 //         result.textContent=`You must choose a payment method!`;
 //     }    
 
 
-    
+
 // }
 
 
@@ -372,7 +372,7 @@
 //     if(count==1){
 //         return true;
 //     }
-    
+
 // return false;
 // }
 // console.log(isprime(7))
@@ -417,7 +417,7 @@
 //     }
 //     else{
 //          result.textContent="please select a unit";
-    
+
 // }
 // }
 
@@ -429,8 +429,48 @@
 // console.log(max);
 // let sub=arr.sort((a,b)=>b-a);
 // console.log(sub);
+let start = document.getElementById("start");
+let stop = document.getElementById("stop");
+let reset = document.getElementById("reset");
+let result = document.getElementById("stopwatch");
 
+let myid = null;
+let starttime = 0;
+let elapsed = 0;
 
-const dat1= new Date();
-console.log(dat1);
+start.onclick = function () {
+    if (myid !== null) return;   // prevent multiple intervals
+
+    starttime = Date.now() - elapsed;  // allows resume
+
+    myid = setInterval(() => {
+
+    elapsed = Date.now() - starttime;
+
+    let hours = Math.floor(elapsed / (1000 * 60 * 60));
+    let minutes = Math.floor((elapsed / (1000 * 60)) % 60);
+    let seconds = Math.floor((elapsed / 1000) % 60);
+    let milliseconds = Math.floor((elapsed % 1000) / 10);
+
+    hours = String(hours).padStart(2, "0");
+    minutes = String(minutes).padStart(2, "0");
+    seconds = String(seconds).padStart(2, "0");
+    milliseconds = String(milliseconds).padStart(2, "0");
+
+    result.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
+
+}, 10);
+};
+
+stop.onclick = function () {
+    clearInterval(myid);
+    myid = null;
+};
+
+reset.onclick = function () {
+    clearInterval(myid);
+    myid = null;
+    elapsed = 0;
+    result.textContent = "00:00:00:00";
+};
 

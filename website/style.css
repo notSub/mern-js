@@ -30,20 +30,54 @@
 
 } */
  body{
-    text-align: center;
-    font-family: verdana;
+    
+    
 
  }
- #h2{
-    color: aqua;
+h1{
     text-align: center;
-    display: block;
-    font-size: 4em;
+}
+ #stopcontainer{
+    
+    text-align: center;
+    border: 5px solid ;
+    padding: 12px; 
+    width: fit-content;
+    margin:auto;
+    border-radius: 30px;
+    font-size: 3rem;
+    font-family: monospace;
+    
  }
- #buttons{
+
+ #start{
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    
+    
+
+ }
+#stop{
+    
+    color: white;
+    font-size: 20px;
     background-color: red;
-    border-radius:40px;
-     cursor: pointer;
-     font-size: 1.5em;
-     padding: 10px 20px; 
- }
+    border-radius: 10px;
+    
+    
+}
+
+#reset{
+    color: white;
+    font-size: 20px;
+    background-color:aqua;
+    border-radius: 10px;
+}
+.box:hover {
+  background-color: lightgray;
+  
+  cursor: pointer;
+  
+}
