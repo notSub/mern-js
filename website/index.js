@@ -429,48 +429,30 @@
 // console.log(max);
 // let sub=arr.sort((a,b)=>b-a);
 // console.log(sub);
-let start = document.getElementById("start");
-let stop = document.getElementById("stop");
-let reset = document.getElementById("reset");
-let result = document.getElementById("stopwatch");
 
-let myid = null;
-let starttime = 0;
-let elapsed = 0;
 
-start.onclick = function () {
-    if (myid !== null) return;   // prevent multiple intervals
 
-    starttime = Date.now() - elapsed;  // allows resume
 
-    myid = setInterval(() => {
+// error handling
 
-    elapsed = Date.now() - starttime;
+// const add=document.getElementById("+");
+// const subtract=document.getElementById("-");
+// const multiply=document.getElementById("*");
+// const divide=document.getElementById("/");
+// const clear=document.getElementById("c");
+// const one=document.getElementById("1");
+// const two=document.getElementById("2");
+// const three=document.getElementById("3");
+// const four=document.getElementById("4");
+// const five=document.getElementById("5");
+// const six=document.getElementById("6");
+// const seven=document.getElementById("7");
+// const eight=document.getElementById("8");
+// const nine=document.getElementById("9");
+// const zero=document.getElementById("0");
+// const decimal=document.getElementById(".");
+// const equal=document.getElementById("=");
 
-    let hours = Math.floor(elapsed / (1000 * 60 * 60));
-    let minutes = Math.floor((elapsed / (1000 * 60)) % 60);
-    let seconds = Math.floor((elapsed / 1000) % 60);
-    let milliseconds = Math.floor((elapsed % 1000) / 10);
 
-    hours = String(hours).padStart(2, "0");
-    minutes = String(minutes).padStart(2, "0");
-    seconds = String(seconds).padStart(2, "0");
-    milliseconds = String(milliseconds).padStart(2, "0");
 
-    result.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
-
-}, 10);
-};
-
-stop.onclick = function () {
-    clearInterval(myid);
-    myid = null;
-};
-
-reset.onclick = function () {
-    clearInterval(myid);
-    myid = null;
-    elapsed = 0;
-    result.textContent = "00:00:00:00";
-};
 
