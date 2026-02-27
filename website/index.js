@@ -1,6 +1,8 @@
 // console.log(`hello`);
 // console.log(`I like pizza`);
 
+// import { useCallback } from "react";
+
 // window.alert('this is an alert');
 // window.alert('i like pizza!');
 // document.getElementById("myh1").textContent ='hello';
@@ -454,5 +456,4 @@
 // const equal=document.getElementById("=");
 
 
-
-
+ 
