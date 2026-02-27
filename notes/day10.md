@@ -1,10 +1,10 @@
-EVENT LISTENERS:
+Event listener:
+
 const mybox=document.getElementById("boxlol");
 
 function changeColor(event){
     event.target.style.backgroundColor="tomato";
     event.target.textContent="Ouchh!!";
-
 
 }
 function revert(event){
@@ -44,7 +44,6 @@ addEventListener("keyup",event=>{
     mybox.textContent="😂";
     mybox.style.backgroundColor="skyblue";
 })
-
 
 const hider=document.getElementById("hide");
 const naruto=document.getElementById("naruto");
