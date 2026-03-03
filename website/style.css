@@ -1,6 +1,17 @@
-#task{
-    font-size: 3rem;
+#pokemon{
+    font-size: 1rem;
+    border-color: red;
 }
-#add{
-    font-size: 3rem;
+
+button{
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    color: red;
+    background-color: hsla(0, 0%, 0%, 0.411);
+}
+.imgs{
+    display: block;
+    width: 250px;
+    height: auto;
 }
